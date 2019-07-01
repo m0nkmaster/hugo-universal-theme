@@ -1,0 +1,20 @@
+{{ if isset .Site.Params "long_desc" }}
+{{ if .Site.Params.long_desc.enable }}
+<section class="bar background-image-fixed-3 no-mb color-white text-center">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="icon icon-lg"><i class="{{ .Site.Params.long_desc.icon }}"></i>
+                </div>
+                <h3 class="text-uppercase">{{ .Site.Params.long_desc.title }}</h3>
+                <p class="lead">{{ .Site.Params.long_desc.subtitle }}</p>
+                <!-- <p class="text-center">
+                    <a href="{{ .Site.Params.long_desc.link_url }}" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.long_desc.link_text }}</a>
+                </p> -->
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
