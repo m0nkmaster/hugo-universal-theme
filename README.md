@@ -144,11 +144,12 @@ You can optionally add the google maps widget defining latitude and longitude in
 
 Since this Hugo sites are static, the contact form uses [Formspree](https://formspree.io/) as a proxy. The form makes a POST request to their servers to send the actual email. Visitors can send up to a 1000 emails each month for free.
 
-To enable the form in the contact page, just type your Formspree email in the `config.toml` file.
+To enable the form in the contact page, just type your Formspree email in the `config.toml` file, and specify whether to use ajax(paid) to send request or plain HTTP POST(free).
 
 ```yaml
 [params]
 email = "your@email.com"
+contact_form_ajax = false
 ```
 
 ### Menu
@@ -162,7 +163,9 @@ You can also define the menu items that will appear in the top bar. Edit the `[[
     weight = 4
 ```
 
-The `weight` parameter will determine the order of the menu entries.
+The `weight` key will determine the order of the menu entries.
+
+**Important:** Do not change the `identifier` key of existing menu entries!
 
 
 ### Sidebar widgets
