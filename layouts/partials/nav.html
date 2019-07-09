@@ -32,7 +32,7 @@
                       {{ end }}
                     </ul>
                     {{ else }}
-                    <a href="{{ .URL }}" onclick="gtag('event', 'Enter Now', {location:'nav'});">{{ .Name }}</a>
+                    <a href="{{ .URL }}" onclick="gtag('nav', '{{ .Name }}', {location:'nav'});">{{ .Name }}</a>
                     {{ end  }}
                   </li>
                   {{ end }}
