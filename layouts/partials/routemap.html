@@ -1,14 +1,17 @@
 {{ if isset .Site.Params "routemap" }}
 {{ if .Site.Params.routemap.enable }}
+<a name="route" />
 <section class="bar background-white">
     <div class="container">
 		<div class="col-md-12">
             <div class="row" style="text-align: center">
-                    <h2 class="text-uppercase">The Route</h2>
-				<!-- <iframe id="mapmyfitness_route" src="//snippets.mapmycdn.com/routes/view/embedded/2536203322?width=600&height=400&elevation=true&line_color=E608a628&rgbhex=28a608&distance_markers=0&unit_type=metric&map_mode=ROADMAP&last_updated=2019-04-09T09:05:17+01:00" height="530px" width="100%" frameborder="0"></iframe><div style="text-align: right; padding-right: 0px;"> -->
-                    <a href="https://www.strava.com/routes/19111181">
-                        <img src="/images/map-v5.png" alt="The Hopton 10k running route" width="100%" style="max-width: 600px" />
+                    <div class="heading text-center">
+                        <h2>The Route</h2>
+                    </div>
+                    <a href="https://www.strava.com/routes/19111181" onclick="ga('send','event', 'in-page', 'routemap', 'image', 1);">
+                        <img src="/images/map-v5.jpg" alt="The Hopton 10k running route" width="100%" style="max-width: 600px" />
                     </a>
+                    <h4>More detailed maps are available on: <a href="https://www.strava.com/routes/19111181" onclick="ga('send','event', 'in-page', 'routemap', 'strava', 1);">Strava</a> | <a href="https://www.google.com/maps/d/viewer?mid=18nX-YnQGysQI_1L8-GL1aDeaNGweVj99" onclick="ga('send','event', 'in-page', 'routemap', 'googlemap', 1);">Google</a></h4>
                 </div>
 			</div>
 		</div>
@@ -17,4 +20,3 @@
 </section>
 {{ end }}
 {{ end }}
-
