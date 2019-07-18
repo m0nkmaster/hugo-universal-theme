@@ -3591,9 +3591,3 @@ a.list-group-item.active > .badge,
   left: 15px;
   right: 15px;
 }
-
-/* For images in blog posts */
-#content .col-md-8 img {
-    width:100%;
-    border:2px solid #A1B91D;
-}
