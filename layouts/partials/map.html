@@ -7,8 +7,7 @@ WORKING!!{{ .Params.latitude }} {{ .Params.longitude }}
           <input id="gmap-lat" value="{{ .Params.latitude }}" />
           <input id="gmap-lng" value="{{ .Params.longitude }}" />
         {{ else }}
-          <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
-          <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
+          
         {{ end }}
         <input id="gmap-marker" value="{{ .Site.BaseURL }}img/marker.png" />
       </div>
