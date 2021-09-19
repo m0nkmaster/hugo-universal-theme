@@ -8,7 +8,7 @@ COORD: {{ .Page.Params.coordinates }}
         <input id="gmap-marker" value="{{ .Site.BaseURL }}img/marker.png" />
         {{ if isset .Page.Params "coordinates" }}
           <input id="gmap-dir" value="{{ .Page.Params.coordinates }}" />
-        {{ elseif isset .Site.Params "direction" }}
+        {{ else if isset .Site.Params "direction" }}
           <input id="gmap-dir" value="{{ .Site.Params.direction }}" />
         {{ else }}
           <input id="gmap-dir" value="{{ .Site.Params.latitude }},{{ .Site.Params.longitude }}" />
