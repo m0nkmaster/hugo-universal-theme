@@ -5,7 +5,7 @@
         <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
         <input id="gmap-marker" value="{{ .Site.BaseURL }}img/marker.png" />
         {{ if isset .Page.Params "coordinates" }}
-          <input id="gmap-dir" value="{{ .Page.Params.coordinates }}" />
+          <input id="gmap-dir" value="{{ .Params.coordinates }}" />
         {{ else if isset .Site.Params "direction" }}
           <input id="gmap-dir" value="{{ .Site.Params.direction }}" />
         {{ else }}
